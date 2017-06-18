@@ -1,9 +1,18 @@
 var React = require('react');
 
-var HelloWorld = React.createClass({
+var SearchBar = React.createClass({
   render: function() {
-    return <h1>Hello world!!!</h1>
+  return (
+    <form>
+      <input type="text" placeholder="Search..." />
+      <p>
+        <input type="checkbox" />
+      {' '}
+      Only show products in stock
+      </p>
+    </form>
+  );
   }
 });
 
-module.exports = HelloWorld;
+module.exports = SearchBar;
