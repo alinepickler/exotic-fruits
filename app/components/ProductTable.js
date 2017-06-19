@@ -1,4 +1,5 @@
 var React = require('react');
+var ProductCategoryRow = require('./ProductCategoryRow');
 var ProductRow = require('./ProductRow');
 
 var ProductTable = React.createClass ({
@@ -6,6 +7,7 @@ var ProductTable = React.createClass ({
     return (
       <table>
         <thead>
+          <ProductCategoryRow />
           <ProductRow />
           <tr>
             <th>Name</th>
