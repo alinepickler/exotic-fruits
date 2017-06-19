@@ -1,18 +1,14 @@
 var React = require('react');
+var SearchBar = require('./SearchBar');
 
-var SearchBar = React.createClass({
+var FilterableProductTable = React.createClass ({
   render: function() {
-  return (
-    <form>
-      <input type="text" placeholder="Search..." />
-      <p>
-        <input type="checkbox" />
-      {' '}
-      Only show products in stock
-      </p>
-    </form>
-  );
+    return (
+      <div>
+        <SearchBar />
+      </div>
+    );
   }
 });
 
-module.exports = SearchBar;
+module.exports = FilterableProductTable;
