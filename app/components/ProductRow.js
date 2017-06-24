@@ -9,8 +9,8 @@ var ProductRow = React.createClass ({
     </span>;
     return (
       <tr>
-        <td>product</td>
-        <td>price</td>
+        <td>{name}</td>
+        <td>{this.props.product.price}</td>
       </tr>
     );
   }
