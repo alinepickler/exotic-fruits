@@ -3,21 +3,40 @@ var ReactDOM = require('react-dom');
 var SearchBar = require('./components/SearchBar');
 var ProductTable = require('./components/ProductTable');
 
-var FilterableProductTable = React.createClass ({
-  getInitialState() {
-    return {
-      filterText: ' ',
-      inStockOnly: false
-    };
-  },
-  render: function() {
+class FilterableProductTable extends React.Component {
+  constructor(props) {
+		super(props);
+		this.state = {
+			filterText: '',
+			inStockOnly: false
+		};
+
+		this.handleFilterTextInput = this.handleFilterTextInput.bind(this);
+		this.handleInStockInput = this.handleInStockInput.bind(this);
+	}
+
+	handleFilterTextInput(filterText) {
+		this.setState({
+			filterText: filterText
+		});
+	}
+
+	handleInStockInput(inStockOnly) {
+		this.setState({
+			inStockOnly: inStockOnly
+		});
+	}
+
+  render() {
     return (
       <div>
         <SearchBar
           filterText={this.state.filterText}
           inStockOnly={this.state.inStockOnly}
+					onFilterTextInput={this.handleFilterTextInput}
+					onInStockInput={this.handleInStockInput}
         />
-        <ProductTable 
+        <ProductTable
           products={this.props.products}
           filterText={this.state.filterText}
           inStockOnly={this.state.inStockOnly}
@@ -25,7 +44,7 @@ var FilterableProductTable = React.createClass ({
       </div>
     );
   }
-});
+}
 
 var PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},

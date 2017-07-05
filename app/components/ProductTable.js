@@ -2,8 +2,8 @@ var React = require('react');
 var ProductCategoryRow = require('./ProductCategoryRow');
 var ProductRow = require('./ProductRow');
 
-var ProductTable = React.createClass ({
-  render: function () {
+class ProductTable extends React.Component {
+  render() {
     var rows = [];
     var lastCategory = null;
     this.props.products.forEach((product) => {
@@ -28,6 +28,6 @@ var ProductTable = React.createClass ({
       </table>
     );
   }
-});
+}
 
 module.exports = ProductTable;

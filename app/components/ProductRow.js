@@ -1,7 +1,7 @@
 var React = require('react');
 
-var ProductRow = React.createClass ({
-  render: function () {
+class ProductRow extends React.Component {
+  render() {
     var name = this.props.product.stocked ?
     this.props.product.name :
     <span style={{color: 'red'}}>
@@ -14,6 +14,6 @@ var ProductRow = React.createClass ({
       </tr>
     );
   }
-});
+}
 
 module.exports = ProductRow;
