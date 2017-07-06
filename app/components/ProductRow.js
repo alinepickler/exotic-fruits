@@ -1,6 +1,6 @@
-var React = require('react');
+import React from 'react';
 
-class ProductRow extends React.Component {
+export default class ProductRow extends React.Component {
   render() {
     var name = this.props.product.stocked ?
     this.props.product.name :
@@ -15,5 +15,3 @@ class ProductRow extends React.Component {
     );
   }
 }
-
-module.exports = ProductRow;

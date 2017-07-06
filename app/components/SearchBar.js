@@ -1,6 +1,6 @@
-var React = require('react');
+import React from 'react';
 
-class SearchBar extends React.Component {
+export default class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.handleFilterTextInputChange = this.handleFilterTextInputChange.bind(this);
@@ -14,7 +14,7 @@ class SearchBar extends React.Component {
   handleInStockInputChange(e) {
     this.props.onInStockInput(e.target.checked);
   }
-  
+
   render() {
   return (
     <form>
@@ -36,5 +36,3 @@ class SearchBar extends React.Component {
     );
   }
 }
-
-module.exports = SearchBar;

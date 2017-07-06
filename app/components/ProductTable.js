@@ -1,8 +1,8 @@
-var React = require('react');
-var ProductCategoryRow = require('./ProductCategoryRow');
-var ProductRow = require('./ProductRow');
+import React from 'react';
+import ProductCategoryRow from './ProductCategoryRow';
+import ProductRow from './ProductRow';
 
-class ProductTable extends React.Component {
+export default class ProductTable extends React.Component {
   render() {
     var rows = [];
     var lastCategory = null;
@@ -29,5 +29,3 @@ class ProductTable extends React.Component {
     );
   }
 }
-
-module.exports = ProductTable;
