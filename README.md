@@ -6,7 +6,7 @@ This is a conceptual project of an online store based on the tutorial [Thinking 
 
 ## Interface
 
-The interface style is not applied yet. It's possible to visualize its prototype on my [Portfolio page](https://alinepickler.github.io/web.html).
+The interface style is not applied yet. It's possible to visualize its prototype on my [Portfolio page](https://alinepickler.github.io/web.html#exotic-fruits-row).
 
 ## Requirements
 
