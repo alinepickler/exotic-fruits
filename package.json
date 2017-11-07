@@ -1,5 +1,5 @@
 {
-  "name": "react-app",
+  "name": "exotic-fruits",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://pickleraline@bitbucket.org/pickleraline/react-app.git"
+    "url": "git+https://github.com/alinepickler/exotic-fruits.git"
   },
   "author": "Aline",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/pickleraline/react-app#readme",
+  "homepage": "https://github.com/alinepickler/exotic-fruits",
   "dependencies": {
     "react": "^15.5.0",
     "react-dom": "^15.5.0",
